@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: ;
 }
 
 .taust {
@@ -8,3 +8,52 @@
   display: flex;
 }
 
+.sonum{
+  border: 2px solid grey;
+  border-radius: 7px;
+  color: white;
+  margin: 12px 30px;
+  padding: 5px;
+  background-color: darkgray;
+
+}
+
+.me .box{
+  background-color: #424242;
+}
+
+.container{
+  display: flex;
+}
+.container.me{
+  flex-direction: row-reverse;
+}
+.kast{
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid darkblue;
+  margin:60px;
+  padding: 5px;
+  height: 500px;
+  overflow: scroll;
+  display: flex;
+  width: 60%;
+  position: fixed;
+}
+.sisestus{
+  position: fixed;
+  bottom: 5;
+  display: flex;
+  flex-direction: row;
+  float:left;
+}
+.sisestus input{
+  padding: 20px 0;
+  width: 70%;
+  float:right;
+}
+.sisestus  button{
+  padding: 20px 0;
+  width: 20%;
+  float:left;
+}
