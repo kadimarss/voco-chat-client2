@@ -13,6 +13,7 @@ function App() {
         const c = [...chats];
         c.push({name,message:msg});
         setChats(c);
+        setMsg('');
     }
 
     return (
@@ -20,6 +21,9 @@ function App() {
 
             <h1>KHK </h1>
             <div className="kast">
+
+
+
                 <div className="chat_container">
                     {chats.map((c)=> (
                         <div className={`container ${c.name===name ? 'me': ''}`}>
@@ -33,14 +37,14 @@ function App() {
 
                 <div className="sisestus">
                     {<div>
-                        <input type="text" placeholder="  User"
-                               onBlur={e => setName(e.target.value)}>
+                        <input className="sisestusväli" type="text" placeholder="  User"
+                               onBlur={e => setName(e.target.value)} >
 
                         </input>
 
                     </div>}
 
-                    <input type="text" onInput={e=>setMsg(e.target.value)} value={msg}
+                    <input className="sisestusväli1" type="text" onInput={e=>setMsg(e.target.value)} value={msg}
                            placeholder=" Message">
 
                     </input>

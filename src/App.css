@@ -18,20 +18,17 @@
 
 }
 
-.me .box{
+.box{
   background-color: #424242;
 }
 
 .container{
   display: flex;
 }
-.container.me{
-  flex-direction: row-reverse;
-}
+
 .kast{
   background-color: black;
   border-radius: 10px;
-  border: 1px solid darkblue;
   margin:60px;
   padding: 5px;
   height: 500px;
@@ -42,18 +39,43 @@
 }
 .sisestus{
   position: fixed;
-  bottom: 5;
+  bottom: 19px;
   display: flex;
   flex-direction: row;
   float:left;
 }
-.sisestus input{
-  padding: 20px 0;
-  width: 70%;
-  float:right;
+.sisestusväli{
+  padding: 20px 0px;
+  width: 200px;
+  float:left;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin-left: 5px;
+  margin-right: 2px;
+  color: black;
+  font-weight: bold;
+
+}
+
+.sisestusväli1{
+  padding: 20px 0px;
+  width: 640px;
+  float:left;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin-right: 2px;
+  color: black;
+  font-weight: bold;
+
 }
 .sisestus  button{
   padding: 20px 0;
-  width: 20%;
-  float:left;
+  width: 10%;
+  float:initial;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin-left: 2px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
